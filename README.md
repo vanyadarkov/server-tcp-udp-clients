@@ -93,3 +93,7 @@ Fiecare client TCP va fi identificat prin ID-ul cu care acesta a fost pornit (ID
 
 Serverul trebuie sa tina evidenta topic-urilor la care este abonat fiecare dintre clienti. La primirea unui mesaj UDP valid, serverul trebuie sa asigure trimiterea acestuia catre toti clientii TCP care sunt abonati la topic-ul respectiv.
 Comanda de abonare la un topic are un parametru de SF (store-and-forward). Daca acesta este setat la 1, inseamna ca un client doreste sa se asigure ca nu pierde niciun mesaj trimis pe acel topic. Astfel, daca un client TCP se deconecteaza, apoi revine, el primi de la server toate mesajele ce nu i-au fost trimise deja, chiar daca acestea au fost trimise in timpul in care clientul a fost deconectat, conform unei politici de tipul store-and-forward.
+
+## Copyright 
+
+Drepturile asupra enuntului temei, clientilor UDP si scriptului de testare apartine echipei PCom, facultatea ACS, UPD (2022).
